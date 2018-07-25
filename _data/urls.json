@@ -1,7 +1,7 @@
 [
   {
     "text": "首页",
-    "url": "/",
+    "url": "/posts",
     "icon": "fa-home",
     "layout": "post"
   },
@@ -26,7 +26,7 @@
     "icon": "fa-github"
   },
   {
-    "text": "反馈",
+    "text": "提要",
     "url": "/feed.xml",
     "icon": "fa-feed",
     "target": _blank
