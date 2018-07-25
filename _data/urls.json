@@ -1,12 +1,12 @@
 [
   {
-    "text": "首页",
+    "text": "Home",
     "url": "/",
     "icon": "fa-home",
     "layout": "post"
   },
   {
-    "text": "关于",
+    "text": "About",
     "url": "/about/",
     "icon": "fa-comments"
   },
@@ -16,17 +16,17 @@
     "icon": "fa-desktop"
   },
   {
-    "text": "简介",
+    "text": "Resume",
     "url": "/#",
     "icon": "fa-graduation-cap",
   },
   {
     "text": "Github",
-    "url": "https://github.com/delonmoo",
+    "url": "/#",
     "icon": "fa-github"
   },
   {
-    "text": "提要",
+    "text": "XML Feed",
     "url": "/feed.xml",
     "icon": "fa-feed",
     "target": _blank
