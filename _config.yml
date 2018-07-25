@@ -1,46 +1,71 @@
-url: https://delonmoo.github.io
-baseurl: /agency-jekyll-theme/
-
-# Site settings
+# SITE CONFIGURATION
 title: Anykey
-email: delonmoo@outlook.com
-description: "摸到就是爽到！"
-#"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+author: DelonMoo # You :P
+description: >  # Meta description of Homepage
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/sleek" # the subpath of your site, e.g. /blog
+url: "https://anykey.red/" # the base hostname & protocol for your site, e.g. http://example.com
 
-
-# Team names, titles and social links
-people:
-- name: DelonMoo
-  pic: 1
-  position: learner
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# SEO PLUGIN
 social:
-  - title: twitter
-    url: http://twitter.com/delonmoo
-  - title: facebook
-    url:#
-  - title: stack-overflow
-    url: #
-  - title: bitbucket 
-    url: #
-  - title: github
-    url: http://github.com/delonmoo
+  name: DelonMoo
+  links:
+    - https://twitter.com/delonmoo
+    - https://www.facebook.com/delonmoo
+    - https://www.linkedin.com/in/delonmoo
+    - https://plus.google.com/delonmoo
+    - https://github.com/delonmoo
+     #- https://keybase.io/benbalter
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: #
-  - line: #
+# THEME SETTINGS
+navigation: # Navigation links
+  - {name: '首页', link: '/'}
+  - {name: '关于', link: '/about'}
+  - {name: '联系', link: '/contact'}
 
-# Build settings
+tagline: >
+  Modern Jekyll theme focused on speed performance &amp; SEO best practices
+
+hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+
+email: delonmoo@outlook.com # email for form submission
+
+twitter_username: delonmoo # replace with your_twitter_username or comment to remove link from footer
+github_username:  delonmoo # replace with your_github_username or comment to remove link from footer
+instagram_username: delonmoo # replace with your_instagram_username or comment to remove link from footer
+
+disqus:
+  shortname: delonmoo # to enable comments replace with your_disqus_shortname
+
+# google_tag_manager: GTM-XXXXXXX # Uncomment to enable GTM. Replace GTM-XXXXXXX with your GTM container ID
+
+service_worker: true
+
+# BUILD SETTINGS
 markdown: kramdown
-permalink: pretty
+highlighter: rouge # or pygments or null
+# theme: jekyll-sleek # Uncomment if you're using the theme as a ruby gem
+exclude:
+  - README.md
+  - node_modules
+  - script
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - npm-debug.log
+  - gulpfile.js
+  - sleek.jpg
+
+include: ['_pages']
+permalink: /:title/
+
+compress_html:
+  clippings: all
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
