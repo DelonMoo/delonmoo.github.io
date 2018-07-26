@@ -1,71 +1,87 @@
 # SITE CONFIGURATION
-title: Anykey
-author: DelonMoo # You :P
-description: >  # Meta description of Homepage
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/sleek" # the subpath of your site, e.g. /blog
-url: "https://anykey.red/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/fengzhichu-theme" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
+url: "https://fengzhichu.com/fengzhichu-theme" # the base hostname & protocol for your site
+imageurl: "https://source.unsplash.com/category/nature/2600x500" #"https://unsplash.it/2600/500?random"
 
-# SEO PLUGIN
-social:
-  name: DelonMoo
-  links:
-    - https://twitter.com/delonmoo
-    - https://www.facebook.com/delonmoo
-    - https://www.linkedin.com/in/delonmoo
-    - https://plus.google.com/delonmoo
-    - https://github.com/delonmoo
-     #- https://keybase.io/benbalter
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: anykey
+  #avatar: avatar.png
+  hometitle: 首页 #display on navigation menu.
+  yoursitetitle: anykey
+  gravatar: # Email MD5 hash
+  description: "used by search engines" # used by search engines
+  visiblewords: 300
+  # Header and footer text
+  header_text: >
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-# THEME SETTINGS
-navigation: # Navigation links
-  - {name: '首页', link: '/'}
-  - {name: '关于', link: '/about'}
-  - {name: '联系', link: '/contact'}
+  header_text_feature_image: img/sample_feature_img.png
+  place_holder_image: img/sample_feature_img.png
+  footer_text: >
+   <a href="https://yoursite.com">YOUR TITLE</a> 
 
-tagline: >
-  Modern Jekyll theme focused on speed performance &amp; SEO best practices
+  # Icons
+  rss: false
+  email_address: "sam@example.com" # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  github: "fengzhichu"
+  weibo: 
+  google_plus:
+  instagram:
+  linkedin:  # Full URL
+  pinterest: 
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: "fengzhichu"
+  wordpress:
+  youtube:
 
-hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+  # Scripts
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: true # Enable if using math markup
 
-email: delonmoo@outlook.com # email for form submission
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  #str_next: "Next"
+  #str_prev: "Prev"
+  str_continue_reading: "Continue Reading..."
 
-twitter_username: delonmoo # replace with your_twitter_username or comment to remove link from footer
-github_username:  delonmoo # replace with your_github_username or comment to remove link from footer
-instagram_username: delonmoo # replace with your_instagram_username or comment to remove link from footer
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
 
-disqus:
-  shortname: delonmoo # to enable comments replace with your_disqus_shortname
+  # Post navigation
+  post_navigation: false
 
-# google_tag_manager: GTM-XXXXXXX # Uncomment to enable GTM. Replace GTM-XXXXXXX with your GTM container ID
+# PAGINATION
+enforce_ssl: "fengzhichu.com"
+paginate: 5
+paginate_path: "blog/page:num"
+permalink: blog/:title/ 
 
-service_worker: true
+# Posted in ... with ...
+sechby: 
+  category:   #in
+  tag:   #with
 
 # BUILD SETTINGS
-markdown: kramdown
-highlighter: rouge # or pygments or null
-# theme: jekyll-sleek # Uncomment if you're using the theme as a ruby gem
-exclude:
-  - README.md
-  - node_modules
-  - script
-  - package.json
-  - package-lock.json
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - npm-debug.log
-  - gulpfile.js
-  - sleek.jpg
+markdown: redcarpet
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: :compressed
 
-include: ['_pages']
-permalink: /:title/
-
-compress_html:
-  clippings: all
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+gems:
+  - jekyll-paginate

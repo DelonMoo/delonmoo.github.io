@@ -1,4 +1,2 @@
-# frozen_string_literal: true
-
-source "https://rubygems.org"
-gemspec
+source 'https://ruby.taobao.org/'
+gem 'github-pages'
