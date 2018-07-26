@@ -1,86 +1,74 @@
-# Fengzhichu Theme
+# Particle Jekyll Theme
 
-A jekyll theme for personal blog which based on [Type theme](https://github.com/rohanchandra/type-theme) and [ibireme's blog](http://blog.ibireme.com). Add several useful features. Fengzhichu Theme is powered by [Jekyll](http://jekyllrb.com/) and freely
-hosted in [Github pages](https://pages.github.com/).
+![](./particle.jpg)
 
-## Check the live demo
+This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
 
-[Fengzhichu Theme Live Demo](https://fengzhichu.com)
+The Theme features:
 
-## Screenshots
-![Home page](img/Screenshot1.png)
-![Pst page](img/Screenshot2.png)
-![Archive page](img/Screenshot3.png)
-![Category page](img/Screenshot4.png)
-![About page](img/Screenshot5.png)
+- Gulp
+- SASS
+- Sweet Scroll
+- Particle.js
+- BrowserSync
+- Font Awesome and Devicon icons
+- Google Analytics
+- Info Customization
 
-## How to use it
-* Star & Fork the [repo](https://github.com/fengzhichu/fengzhichu-theme).
-* Rename repo as 'yourusername.github.io'.
-* You can delete gh-pages branch if you want.
-* Clone your <b>master branch</b> to local directory.
-* Custom the '_config.yml' to your style.
-* Install jekyll can refer 'ruby_install_by_rvm.sh', modify to suit your need.
-* Run jekyll serve -w.
+## Basic Setup
 
-## Customization
+1. [Install Jekyll](http://jekyllrb.com)
+2. Fork the [Particle Theme](https://github.com/nrandecker/particle/fork)
+3. Clone the repo you just forked.
+4. Edit `_config.yml` to personalize your site.
 
-### _config.yml
-Some important configurations.
-* imageurl: Randomly change image which display on top of site.
-  * By default image changes everytime when open your site or reflash it. If you want to change image daily or weekly, just append '/daily' or 'weekly' to imageurl.
-* title: Display on browse tab.
-* hometitle: The first menu name of navigation bar.
-* yoursitetitle: Your LOGO place here.
-* visiblewords: Number of words which you want to display in post of homepage.
-* sechby:
-  * category: "Posted in" #Words before Category name.
-  * tag: "with" #Words before Tag name.
-  * example: Posted in 'Category name' with 'Tag name'.
+## Site and User Settings
 
-### Tags
-Add new tag.
-* Annotate your post entry front-matter block as usual:
-```yml
----
-layout: post
-title: How To Use Tags And Categories On GitHub Pages Without Plugins
-category: programming
-tags: [github, github-pages, jekyll]
----
+You have to fill some informations on `_config.yml` to customize your site.
+
 ```
-* Add an entry in your _data/tags.yml for every tag.
-```yml
-- slug: github-pages
-  name: GitHub Pages
+# Site settings
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
+
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+user_title: Anon Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
 ```
-* Create a .md file which name is your Tag slug for every tag.
-```yml
----
-layout: blog_by_tag
-tag: github-pages
-permalink: /blog/tag/github-pages/
----
-  ```
 
-###Categories
-Similar as Tags.
+**Don't forget to change your url before you deploy your site!**
 
-## Thanks
-* Theme template: [type-theme](https://github.com/rohanchandra/type-theme)
-* Navigation bar: [ibireme's blog](http://blog.ibireme.com)
-* Features of Tag and Category: [HOW TO USE TAGS AND CATEGORIES ON GITHUB PAGES WITHOUT PLUGINS](http://www.minddust.com/post/tags-and-categories-on-github-pages/)
+## Color and Particle Customization
+- Color Customization
+  - Edit the sass variables
+- Particle Customization
+  - Edit the json data in particle function in app.js
+  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
 
-## Enjoy
-- If you like, please star it. Thank you!
-- Enjoy it!
+## Running the blog in local
 
-## Copyright & License
-Copyright (C) 2015 - Released under the MIT License.
+In order to compile the assets and run Jekyll on local you need to follow those steps:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+- Install [NodeJS](https://nodejs.org/)
+- Run `npm install`
+- Run `gulp`
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+## Questions
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+Having any issues file a [GitHub Issue](https://github.com/nrandecker/particle/issues/new).
+
+## License
+
+This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
+
+## Credits
+
+This theme was partially designed with the inspiration from these fine folks
+- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
+- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)

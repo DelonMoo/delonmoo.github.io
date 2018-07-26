@@ -1,11 +1,8 @@
-{% if site.theme.katex %}
-<script src="{{ "/js/katex_init.js" | prepend: site.baseurl }}"></script>
-{% endif %}
-
-{% if site.theme.footer_text %}
-<footer id="page-footer-trans" class="page-footer">
-	<!--<p class="text">{{ site.theme.footer_text }}</p>-->
-	Copyright &copy; {{ site.time | date: '%Y' }} {{ site.theme.footer_text }} All Rights Reserved. 
-	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+<footer class="footer">
+    <p>&copy; {{site.username}}</p>
+    <p>Jekyll是个好东西<span class="love">❤</span> by <a href="https://github.com/delonmoo">develoer</a></p>
 </footer>
-{% endif %}
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+{% include google-analytics.html %}
