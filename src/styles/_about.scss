@@ -1,7 +1,7 @@
 #about 
 {
   width: 90%;
-  margin: 50 auto;
+  margin: 0 auto;
   max-width: 960px;
   @media only screen and (min-width: $cut) 
   {
@@ -18,24 +18,11 @@
 .user 
 {
   text-align: center;
-  font-size: 60px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  p 
-  {
-    font-size: 16px;
-  }
-  @media only screen and (min-width: $cut) 
-  {
-    flex-wrap: nowrap;
-    font-size: 75px;
-  }
+  margin: 0 auto;
 }
 
 .user-details 
 {
   text-align: center;
-  margin: 5px auto;
+  margin: 0 auto;
 }
